@@ -32,16 +32,31 @@ print_matrix(m3)
 matrix_mult(m2,m3)
 print_matrix(m3)
 
+print("---------------------------------\n")
 
-
-
-'''
-# Draw
+# Draw a diamond
 screen = new_screen()
-color = [ 0, 255, 0 ]
+color = [135,206,250]
 matrix = new_matrix()
+
+add_edge(matrix,250,100,0,125,250,0)
+add_edge(matrix,250,100,0,375,250,0)
+
+add_edge(matrix,125,250,0,375,250,0)
+
+add_edge(matrix,125,250,0,195,315,0)
+add_edge(matrix,375,250,0,305,315,0)
+
+add_edge(matrix,195,315,0,250,100,0)
+add_edge(matrix,305,315,0,250,100,0)
+
+add_edge(matrix,210,250,0,250,315,0)
+add_edge(matrix,290,250,0,250,315,0)
+
+add_edge(matrix,195,315,0,305,315,0)
+print_matrix(matrix)
 
 
 draw_lines( matrix, screen, color )
 display(screen)
-'''
+

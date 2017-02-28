@@ -22,6 +22,7 @@ print("Scaling m by 3: \n")
 scalar_mult(m,3)
 print_matrix(m)
 
+# matrix multiplication
 print("---------------------------------\n")
 print("m2: \n")
 m2 = [[1,2,3],[4,5,6],[7,8,9]]
@@ -29,6 +30,7 @@ print_matrix(m2)
 print("m3: \n")
 m3 = [[0,0,1],[0,1,1],[1,1,1]]
 print_matrix(m3)
+print("m2 x m3 \n")
 matrix_mult(m2,m3)
 print_matrix(m3)
 
